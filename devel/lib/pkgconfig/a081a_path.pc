@@ -1,0 +1,8 @@
+prefix=/home/mukundabomb/a081a_path_ws/devel
+
+Name: a081a_path
+Description: Description of a081a_path
+Version: 0.0.0
+Cflags: -I/home/mukundabomb/a081a_path_ws/src/a081a_path/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs nav_msgs std_msgs geometry_msgs

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="a081a_path" type="range_detect_node" name="range_detect_node" output="screen" launch-prefix="gnome-terminal --command"/>
+    <node pkg="a081a_path" type="path_plan_node" name="path_plan_node" output="screen" launch-prefix="gnome-terminal --command"/>
+    <node pkg="a081a_path" type="bot_control_node" name="bot_control_node" output="screen" launch-prefix="gnome-terminal --command"/>
+    <node pkg="a081a_path" type="pos_correct_node" name="pos_correct_node" output="screen" launch-prefix="gnome-terminal --command"/>
+    <rosparam command="load" file="$(find a081a_path)/config/config.yaml"/>
+    <rosparam command="load" file="$(find a081a_path)/config/config2.yaml"/>
+
+
+
+</launch>
